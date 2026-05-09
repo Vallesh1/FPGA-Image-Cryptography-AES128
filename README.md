@@ -15,7 +15,7 @@ The research and methodology backing this repository have been officially accept
 * **Conference:** 2025 IEEE International Conference on Communication Networks and Computing (CNC 2025)
 * **Venue:** Rajkiya Engineering College Sonbhadra, Uttar Pradesh
 * **Date:** December 29th & 30th, 2025
-* **Indexing:** IEEE Xplore, SCOPUS
+* **Indexing:** IEEE Xplore, SCOPUS, DBLP, and Web of Science.
 
 **Citation:**
 > *L. Sreenithai, R. SM, C. SM, and M. V. Nath, "A Flexible FPGA Approach to Image Cryptography using PYNQ-Z2," in Proc. IEEE Int. Conf. on Communication Networks and Computing (CNC), 2025. DOI: 10.1109/CNC68716.2025.11484723*
@@ -41,26 +41,31 @@ The research and methodology backing this repository have been officially accept
 
 ---
 
-## 🔧 Setup & Installation
+## 🔧 Full Setup & Installation Guide
 
-### 1. Board Networking & Connectivity (Laptop to PYNQ-Z2)
-To access the Jupyter interface from your laptop, configure the network bridge:
+### Phase 1: Physical Board Setup
+Before running any software, ensure the PYNQ-Z2 is properly configured to boot from the SD card.
+1. Flash the official **PYNQ Linux Image** onto a MicroSD card (minimum 16GB).
+2. Insert the MicroSD card into the slot underneath the PYNQ-Z2 board.
+3. **Jumper Configuration:** Set the Boot Jumper (JP4) to **SD**. Set the Power Jumper to **USB** or **REG** depending on your power supply.
+4. Power on the board. Wait for the **Done** LED (Green) and the two colored LEDs to flash, indicating the OS has booted successfully.
 
-* **Hardware Connection:** Connect the PYNQ-Z2 Ethernet port directly to your laptop's Ethernet port.
-* **Laptop IP Configuration (Windows/Linux):**
-    1. Go to Network Connections -> Ethernet Properties.
-    2. Select **IPv4 (TCP/IPv4)** -> Properties.
-    3. Use the following **Static IP** to communicate with the board:
-       * **IP Address:** `192.168.2.1`
-       * **Subnet Mask:** `255.255.255.0`
-       * **Gateway:** Leave blank.
-* **Accessing Jupyter:**
-    1. Open a browser and navigate to: `http://192.168.2.99:9090`
-    2. Default Password: `xilinx`
+### Phase 2: Network Connectivity (Direct Laptop Connection)
+To control the FPGA via the Jupyter interface, establish a direct local network bridge:
+1. Connect an Ethernet cable directly from the PYNQ-Z2 Ethernet port to your laptop.
+2. **Configure Laptop IPv4 Settings:**
+   * **Windows:** Settings > Network & Internet > Ethernet > IP Assignment (Edit) > Manual (IPv4).
+   * **Linux:** Settings > Network > Wired > IPv4 Method (Manual).
+3. Apply the following static IP configuration:
+   * **IP Address:** `192.168.2.1`
+   * **Subnet Mask:** `255.255.255.0`
+   * **Gateway / DNS:** Leave blank.
+4. Open a web browser and navigate to the board's default fallback IP:
+   👉 `http://192.168.2.99:9090`
+5. Log in to Jupyter using the default password: `xilinx`
 
-### 2. Hardware Reconstruction (Vivado)
-To recreate the hardware platform:
-1. Open **Vivado 2025.1** and open the Tcl Console.
-2. Navigate to the `/hardware` directory and run:
-   ```tcl
-   source design_1.tcl
+### Phase 3: Hardware Reconstruction (Vivado 2025.1)
+Rebuild the custom AES-128 cryptographic hardware pipeline using the provided Tcl script:
+1. Clone this repository to your local machine:
+   ```bash
+   git clone [https://github.com/YourUsername/FPGA-Image-Cryptography-AES128.git](https://github.com/YourUsername/FPGA-Image-Cryptography-AES128.git)
