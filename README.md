@@ -64,8 +64,3 @@ To control the FPGA via the Jupyter interface, establish a direct local network 
    👉 `http://192.168.2.99:9090`
 5. Log in to Jupyter using the default password: `xilinx`
 
-### Phase 3: Hardware Reconstruction (Vivado 2025.1)
-Rebuild the custom AES-128 cryptographic hardware pipeline using the provided Tcl script:
-1. Clone this repository to your local machine:
-   ```bash
-   git clone [https://github.com/YourUsername/FPGA-Image-Cryptography-AES128.git](https://github.com/YourUsername/FPGA-Image-Cryptography-AES128.git)
