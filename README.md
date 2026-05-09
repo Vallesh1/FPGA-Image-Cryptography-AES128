@@ -15,7 +15,7 @@ The research and methodology backing this repository have been officially accept
 * **Conference:** 2025 IEEE International Conference on Communication Networks and Computing (CNC 2025)
 * **Venue:** Rajkiya Engineering College Sonbhadra, Uttar Pradesh
 * **Date:** December 29th & 30th, 2025
-* **Indexing:** IEEE Xplore, SCOPUS, DBLP, and Web of Science.
+* **Indexing:** IEEE Xplore, SCOPUS
 
 **Citation:**
 > *L. Sreenithai, R. SM, C. SM, and M. V. Nath, "A Flexible FPGA Approach to Image Cryptography using PYNQ-Z2," in Proc. IEEE Int. Conf. on Communication Networks and Computing (CNC), 2025. DOI: 10.1109/CNC68716.2025.11484723*
