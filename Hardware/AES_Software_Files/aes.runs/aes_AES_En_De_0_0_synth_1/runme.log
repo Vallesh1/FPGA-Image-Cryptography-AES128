@@ -1,0 +1,1124 @@
+
+*** Running vivado
+    with args -log aes_AES_En_De_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source aes_AES_En_De_0_0.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Nov 25 20:28:38 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source aes_AES_En_De_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:28 . Memory (MB): peak = 525.535 ; gain = 221.801
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/esaik/OneDrive/Documents/PYNQ/hls_component'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+Command: synth_design -top aes_AES_En_De_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14064
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1307.168 ; gain = 539.949
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'aes_AES_En_De_0_0' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ip/aes_AES_En_De_0_0/synth/aes_AES_En_De_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_extendKey' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_extendKey.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_extendKey_Pipeline_extendKey_label5' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_extendKey_Pipeline_extendKey_label5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_flow_control_loop_pipe_sequential_init' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_extendKey_Pipeline_extendKey_label5' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_extendKey_Pipeline_extendKey_label5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_extendKey_Pipeline_extendKey_label0' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_extendKey_Pipeline_extendKey_label0.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_extendKey_Pipeline_extendKey_label0_S_ROM_AUTO_1R' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_extendKey_Pipeline_extendKey_label0_S_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_extendKey_Pipeline_extendKey_label0_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_extendKey_Pipeline_extendKey_label0_S_ROM_AUTO_1R.v:45]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_extendKey_Pipeline_extendKey_label0_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_extendKey_Pipeline_extendKey_label0_S_ROM_AUTO_1R.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_extendKey_Pipeline_extendKey_label0_S_ROM_AUTO_1R' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_extendKey_Pipeline_extendKey_label0_S_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_extendKey_Pipeline_extendKey_label0_Rcon_ROM_AUTO_1R' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_extendKey_Pipeline_extendKey_label0_Rcon_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_extendKey_Pipeline_extendKey_label0_Rcon_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_extendKey_Pipeline_extendKey_label0_Rcon_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_extendKey_Pipeline_extendKey_label0_Rcon_ROM_AUTO_1R' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_extendKey_Pipeline_extendKey_label0_Rcon_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_sparsemux_81_6_32_1_1' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_sparsemux_81_6_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_sparsemux_81_6_32_1_1' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_sparsemux_81_6_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_extendKey_Pipeline_extendKey_label0' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_extendKey_Pipeline_extendKey_label0.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_extendKey' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_extendKey.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_deAes_return' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_deAes_return_S2_ROM_AUTO_1R' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:981]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:982]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:983]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:984]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:985]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:986]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:987]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:988]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:989]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:990]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:991]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:992]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:993]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:994]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:995]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:996]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:997]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:998]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:999]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1000]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1001]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1002]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1003]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1004]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1005]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1006]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1007]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1008]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1009]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1010]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1011]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1012]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1013]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1014]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1015]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1016]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1017]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1018]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1019]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1020]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1021]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1022]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1023]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1024]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1025]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1026]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1027]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1028]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1029]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1030]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1031]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1032]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1033]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1034]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1035]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1036]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1037]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1038]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1039]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1040]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1041]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1042]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1043]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1044]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1045]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1046]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1047]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1048]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1049]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1050]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1051]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1052]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1053]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1054]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1055]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1056]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1057]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1058]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1059]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_deAes_return_S2_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:1060]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_deAes_return_S2_ROM_AUTO_1R' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return_S2_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_deAes_return' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_deAes_return.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_aes_return' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_aes_return_S_ROM_AUTO_1R' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:981]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:982]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:983]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:984]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:985]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:986]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:987]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:988]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:989]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:990]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:991]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:992]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:993]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:994]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:995]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:996]
+INFO: [Synth 8-3876] $readmem data file './AES_En_De_aes_return_S_ROM_AUTO_1R.dat' is read successfully [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:997]
+INFO: [Common 17-14] Message 'Synth 8-3876' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_aes_return_S_ROM_AUTO_1R' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return_S_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_aes_return' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_aes_return.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_control_s_axi' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_control_s_axi_ram' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_control_s_axi.v:554]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_control_s_axi_ram' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_control_s_axi.v:554]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_control_s_axi_ram__parameterized0' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_control_s_axi.v:554]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_control_s_axi_ram__parameterized0' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_control_s_axi.v:554]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_control_s_axi.v:289]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_control_s_axi' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_regslice_both' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_regslice_both' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_regslice_both__parameterized0' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_regslice_both__parameterized0' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'AES_En_De_regslice_both__parameterized1' [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De_regslice_both__parameterized1' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'AES_En_De' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'aes_AES_En_De_0_0' (0#1) [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ip/aes_AES_En_De_0_0/synth/aes_AES_En_De_0_0.v:53]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ipshared/268e/hdl/verilog/AES_En_De_control_s_axi.v:352]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-7129] Port we0[3] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port we0[2] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port we0[1] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port we0[0] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[31] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[30] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[29] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[28] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[27] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[26] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[25] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[24] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[23] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[22] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[21] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[20] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[19] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[18] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[17] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[16] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[15] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[14] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[13] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[12] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[11] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[10] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[9] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[8] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[7] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[6] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[5] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[4] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[3] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[2] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[1] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port d0[0] in module AES_En_De_control_s_axi_ram__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module AES_En_De_aes_return_S_ROM_AUTO_1R is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module AES_En_De_deAes_return_S2_ROM_AUTO_1R is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TKEEP[15] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TKEEP[14] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TKEEP[13] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TKEEP[12] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TKEEP[11] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TKEEP[10] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TKEEP[9] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TKEEP[8] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TKEEP[7] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TKEEP[6] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TKEEP[5] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TKEEP[4] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TKEEP[3] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TKEEP[2] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TKEEP[1] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TKEEP[0] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TSTRB[15] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TSTRB[14] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TSTRB[13] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TSTRB[12] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TSTRB[11] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TSTRB[10] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TSTRB[9] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TSTRB[8] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TSTRB[7] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TSTRB[6] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TSTRB[5] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TSTRB[4] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TSTRB[3] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TSTRB[2] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TSTRB[1] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TSTRB[0] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port input_stream_TLAST[0] in module AES_En_De_AES_En_De_Pipeline_VITIS_LOOP_620_2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module AES_En_De_extendKey_Pipeline_extendKey_label0_Rcon_ROM_AUTO_1R is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module AES_En_De_extendKey_Pipeline_extendKey_label0_S_ROM_AUTO_1R is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:48 ; elapsed = 00:00:56 . Memory (MB): peak = 1839.914 ; gain = 1072.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:59 . Memory (MB): peak = 1839.914 ; gain = 1072.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:59 . Memory (MB): peak = 1839.914 ; gain = 1072.695
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1839.914 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ip/aes_AES_En_De_0_0/constraints/AES_En_De_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/esaik/aes/aes.gen/sources_1/bd/aes/ip/aes_AES_En_De_0_0/constraints/AES_En_De_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/esaik/aes/aes.runs/aes_AES_En_De_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/esaik/aes/aes.runs/aes_AES_En_De_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1943.898 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:48 ; elapsed = 00:02:02 . Memory (MB): peak = 1943.898 ; gain = 1176.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:48 ; elapsed = 00:02:02 . Memory (MB): peak = 1943.898 ; gain = 1176.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:48 ; elapsed = 00:02:02 . Memory (MB): peak = 1943.898 ; gain = 1176.680
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'AES_En_De_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'AES_En_De_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'AES_En_De_regslice_both'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'AES_En_De_regslice_both__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'AES_En_De_regslice_both__parameterized1'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3971] The signal "AES_En_De_control_s_axi_ram:/mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'AES_En_De_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'AES_En_De_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'AES_En_De_regslice_both'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'AES_En_De_regslice_both__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'AES_En_De_regslice_both__parameterized1'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:14 ; elapsed = 00:02:31 . Memory (MB): peak = 1943.898 ; gain = 1176.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   29 Bit       Adders := 1     
+	   2 Input   28 Bit       Adders := 1     
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 1471  
+	  13 Input      8 Bit         XORs := 36    
+	  14 Input      8 Bit         XORs := 36    
+	  11 Input      8 Bit         XORs := 54    
+	  12 Input      8 Bit         XORs := 18    
+	   4 Input      8 Bit         XORs := 138   
+	   6 Input      8 Bit         XORs := 45    
+	   3 Input      8 Bit         XORs := 57    
+	   5 Input      8 Bit         XORs := 35    
+	   2 Input      4 Bit         XORs := 454   
+	  13 Input      4 Bit         XORs := 36    
+	  14 Input      4 Bit         XORs := 36    
+	  11 Input      4 Bit         XORs := 54    
+	  12 Input      4 Bit         XORs := 18    
+	   4 Input      4 Bit         XORs := 123   
+	   6 Input      4 Bit         XORs := 38    
+	   3 Input      4 Bit         XORs := 75    
+	   5 Input      4 Bit         XORs := 36    
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	              128 Bit    Registers := 5     
+	               32 Bit    Registers := 181   
+	               29 Bit    Registers := 1     
+	               28 Bit    Registers := 2     
+	               27 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 10    
+	                8 Bit    Registers := 1503  
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 1325  
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 149   
++---RAMs : 
+	              128 Bit	(4 X 32 bit)          RAMs := 1     
+	               96 Bit	(3 X 32 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 324   
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 4     
+	  11 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 190   
+	   2 Input   28 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 2     
+	   2 Input   22 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 8     
+	   2 Input    8 Bit        Muxes := 1060  
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 9     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 84    
+	   4 Input    2 Bit        Muxes := 32    
+	   2 Input    1 Bit        Muxes := 63    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal "inst/i_2_3/control_s_axi_U/int_in_char_len/mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module AES_En_De_control_s_axi.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module AES_En_De_control_s_axi.
+INFO: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module AES_En_De_regslice_both__parameterized0__1.
+INFO: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module AES_En_De_regslice_both__parameterized0__1.
+INFO: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module AES_En_De_regslice_both__parameterized0__2.
+INFO: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module AES_En_De_regslice_both__parameterized0__2.
+INFO: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module AES_En_De_regslice_both__parameterized1__1.
+INFO: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module AES_En_De_regslice_both__parameterized1__1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:32 ; elapsed = 00:05:11 . Memory (MB): peak = 2059.383 ; gain = 1292.164
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5835] Resources of type BRAM have been overutilized. Used = 326, Available = 280. Will try to implement using LUT-RAM. 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++----------------------------------------------+---------------+---------------+----------------+
+|Module Name                                   | RTL Object    | Depth x Width | Implemented As | 
++----------------------------------------------+---------------+---------------+----------------+
+|AES_En_De                                     | S2_U/q152_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q155_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q153_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q159_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q149_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q146_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q145_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q158_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q148_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q147_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q150_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q156_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q21_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q18_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q24_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q31_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q136_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q139_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q138_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q137_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q143_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q133_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q130_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q32_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q45_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q42_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q39_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q132_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q142_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q129_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q135_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q141_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q128_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q131_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q134_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q140_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q60_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q57_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q51_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q54_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q48_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q61_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q58_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q55_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q52_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q49_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q62_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q59_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q53_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q50_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q56_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q63_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q64_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q77_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q74_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q71_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q120_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q123_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q122_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q69_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q66_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q72_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q79_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q121_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q114_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q127_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q117_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q113_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q126_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q116_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q119_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q125_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q112_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q115_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q118_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q124_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q80_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q93_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q90_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q87_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q84_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q81_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q94_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q91_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q85_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q82_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q88_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q95_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q108_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q105_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q99_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q102_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q96_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q109_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q106_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q103_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q100_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q97_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q110_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q107_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q101_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q98_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q104_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q111_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q0_reg   | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q1_reg   | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q2_reg   | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q3_reg   | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q4_reg   | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q5_reg   | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q6_reg   | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q7_reg   | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q8_reg   | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q9_reg   | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q10_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q11_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q12_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q13_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q14_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q15_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q16_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q17_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q19_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q20_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q22_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q23_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q25_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q26_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q27_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q28_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q29_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q30_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q33_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q34_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q35_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q36_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q37_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q38_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q40_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q41_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q43_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q44_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q46_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q47_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q65_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q67_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q68_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q70_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q73_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q75_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q76_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q78_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q83_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q86_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q89_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q92_reg  | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q144_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q151_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q154_reg | 256x8         | Block RAM      | 
+|AES_En_De                                     | S2_U/q157_reg | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | S_U/q156_reg  | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | S_U/q145_reg  | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | S_U/q146_reg  | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | S_U/q157_reg  | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | S_U/q158_reg  | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | S_U/q147_reg  | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | S_U/q144_reg  | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | S_U/q159_reg  | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | S_U/q150_reg  | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | S_U/q151_reg  | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | S_U/q148_reg  | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | S_U/q149_reg  | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | S_U/q155_reg  | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | S_U/q152_reg  | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | S_U/q153_reg  | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | S_U/q154_reg  | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_aes_return                          | p_0_out       | 256x8         | Block RAM      | 
+|AES_En_De_extendKey_Pipeline_extendKey_label0 | S_U/q0_reg    | 256x8         | Block RAM      | 
+|AES_En_De_extendKey_Pipeline_extendKey_label0 | S_U/q1_reg    | 256x8         | Block RAM      | 
+|AES_En_De_extendKey_Pipeline_extendKey_label0 | S_U/q2_reg    | 256x8         | Block RAM      | 
+|AES_En_De_extendKey_Pipeline_extendKey_label0 | S_U/q3_reg    | 256x8         | Block RAM      | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
+|AES_En_De                                     | p_0_out       | 256x8         | LUT            | 
++----------------------------------------------+---------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/i_2_3/control_s_axi_U | int_in_char_len/mem_reg | 3 x 32(READ_FIRST)     | W | R | 3 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      | 
++---------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------------------+-----------------+-----------+----------------------+----------------+
+|Module Name                | RTL Object      | Inference | Size (Depth x Width) | Primitives     | 
++---------------------------+-----------------+-----------+----------------------+----------------+
+|inst/i_2_3/control_s_axi_U | int_key/mem_reg | Implied   | 4 x 32               | RAM16X1D x 32  | 
++---------------------------+-----------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:19 ; elapsed = 00:07:24 . Memory (MB): peak = 2064.840 ; gain = 1297.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:07:08 ; elapsed = 00:08:24 . Memory (MB): peak = 2437.469 ; gain = 1670.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/i_2_3/control_s_axi_U | int_in_char_len/mem_reg | 3 x 32(READ_FIRST)     | W | R | 3 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      | 
++---------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++---------------------------+-----------------+-----------+----------------------+----------------+
+|Module Name                | RTL Object      | Inference | Size (Depth x Width) | Primitives     | 
++---------------------------+-----------------+-----------+----------------------+----------------+
+|inst/i_2_3/control_s_axi_U | int_key/mem_reg | Implied   | 4 x 32               | RAM16X1D x 32  | 
++---------------------------+-----------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q62_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q62_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q53_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q53_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q56_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q56_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q64_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q64_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q74_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q74_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q120_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q120_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q122_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q122_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q66_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q66_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q79_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q79_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q114_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q114_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q117_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q117_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q126_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q126_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q119_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q119_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q112_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q112_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q118_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q118_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q80_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q80_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q90_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q90_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q84_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q84_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q94_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q94_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q85_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q85_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q88_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q88_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q108_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q108_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q99_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q99_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q96_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q96_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q106_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q106_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q100_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q100_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q110_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q110_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q101_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q101_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q104_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q104_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q4_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q4_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q6_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q6_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q8_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q8_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q10_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q10_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q12_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q12_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q14_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q14_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q16_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q16_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q19_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q19_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q22_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q22_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q25_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q25_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q27_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q27_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q29_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q29_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q33_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q33_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q35_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q35_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q37_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q37_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q40_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q40_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q43_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q43_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q46_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q46_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q65_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/grp_deAes_return_fu_446/S2_U/q65_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:07:34 ; elapsed = 00:08:51 . Memory (MB): peak = 2449.457 ; gain = 1682.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:07:43 ; elapsed = 00:09:01 . Memory (MB): peak = 2449.457 ; gain = 1682.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:44 ; elapsed = 00:09:01 . Memory (MB): peak = 2449.457 ; gain = 1682.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:47 ; elapsed = 00:09:05 . Memory (MB): peak = 2449.457 ; gain = 1682.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:07:48 ; elapsed = 00:09:06 . Memory (MB): peak = 2449.457 ; gain = 1682.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:07:49 ; elapsed = 00:09:08 . Memory (MB): peak = 2449.457 ; gain = 1682.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:07:50 ; elapsed = 00:09:08 . Memory (MB): peak = 2449.457 ; gain = 1682.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|AES_En_De   | grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/icmp_ln620_reg_1109_pp0_iter20_reg_reg[0] | 20     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|AES_En_De   | grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/icmp_ln655_reg_1113_pp0_iter21_reg_reg[0] | 22     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|AES_En_De   | grp_AES_En_De_Pipeline_VITIS_LOOP_620_2_fu_719/ap_loop_exit_ready_pp0_iter21_reg_reg     | 21     | 1     | NO           | NO                 | YES               | 0      | 1       | 
++------------+------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    37|
+|2     |LUT1     |   120|
+|3     |LUT2     |  2715|
+|4     |LUT3     |  1814|
+|5     |LUT4     |  2245|
+|6     |LUT5     |  1365|
+|7     |LUT6     |  9133|
+|8     |MUXF7    |   388|
+|9     |MUXF8    |   192|
+|10    |RAM16X1D |    32|
+|11    |RAMB18E1 |   139|
+|14    |RAMB36E1 |     1|
+|15    |SRLC32E  |     3|
+|16    |FDRE     | 11910|
+|17    |FDSE     |    13|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:07:50 ; elapsed = 00:09:08 . Memory (MB): peak = 2449.457 ; gain = 1682.238
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:28 ; elapsed = 00:08:37 . Memory (MB): peak = 2449.457 ; gain = 1578.254
+Synthesis Optimization Complete : Time (s): cpu = 00:07:50 ; elapsed = 00:09:09 . Memory (MB): peak = 2449.457 ; gain = 1682.238
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.712 . Memory (MB): peak = 2449.457 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 789 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2449.457 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
+
+Synth Design complete | Checksum: 3a59a141
+INFO: [Common 17-83] Releasing license: Synthesis
+366 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:08:13 ; elapsed = 00:09:36 . Memory (MB): peak = 2449.457 ; gain = 1906.961
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2449.457 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/esaik/aes/aes.runs/aes_AES_En_De_0_0_synth_1/aes_AES_En_De_0_0.dcp' has been generated.
+write_vhdl: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2449.457 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP aes_AES_En_De_0_0, cache-ID = 0ac521dd63a0b461
+INFO: [Coretcl 2-1174] Renamed 22 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 2449.457 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/esaik/aes/aes.runs/aes_AES_En_De_0_0_synth_1/aes_AES_En_De_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file aes_AES_En_De_0_0_utilization_synth.rpt -pb aes_AES_En_De_0_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2449.457 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 25 20:39:18 2025...
