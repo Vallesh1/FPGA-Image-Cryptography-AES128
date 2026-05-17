@@ -1,0 +1,174 @@
+from pynq import Overlay, allocate, MMIO
+import numpy as np
+import time
+from PIL import Image
+
+MAX_BUFFER_SIZE = 8 * 1024 * 1024
+
+input_buffers = {}
+output_buffers = {}
+
+def get_buffers(size):
+    if size not in input_buffers:
+        input_buffers[size] = allocate(shape=(size,), dtype=np.uint8)
+        output_buffers[size] = allocate(shape=(size,), dtype=np.uint8)
+    return input_buffers[size], output_buffers[size]
+
+# Initialize system once (moved to global scope)
+AES_overlay = Overlay("./AES_1.bit")
+AES = AES_overlay.AES_En_De_0
+dma_ip = AES_overlay.axi_dma_0
+AES_address = AES_overlay.ip_dict['AES_En_De_0']['phys_addr']
+mmio = MMIO(AES_address, 0x40)
+
+print("System initialized")
+
+def call_AES_optimized(input_bytes, num_of_input_bytes, key_bytes_object, en_or_decryption):
+    
+    # Use pre-allocated buffers
+    in_buffer, out_buffer = get_buffers(num_of_input_bytes)
+    
+    if isinstance(input_bytes, (bytes, bytearray)):
+        np.copyto(in_buffer, np.frombuffer(input_bytes, dtype=np.uint8, count=num_of_input_bytes))
+    else:
+        in_buffer[:] = np.frombuffer(bytearray(input_bytes), dtype=np.uint8, count=num_of_input_bytes)
+    
+    mmio.write(32, key_bytes_object)
+    mmio.write(16, num_of_input_bytes)
+    mmio.write(20, en_or_decryption)
+    
+    timeout = 1000
+    while timeout > 0 and not (mmio.read(0x00) & 0x4):
+        timeout -= 1
+        pass
+    
+    if timeout == 0:
+        print("Warning: AES IP timeout")
+    
+    dma_ip.recvchannel.transfer(out_buffer)  # Start receive first
+    dma_ip.sendchannel.transfer(in_buffer)   # Then send
+    mmio.write(0x00, 0x01)  # Start execution
+    
+    # Wait for completion
+    dma_ip.sendchannel.wait()
+    dma_ip.recvchannel.wait()
+    
+    return bytes(out_buffer)
+
+
+def expand_to_128b_fast(data, encoding="utf-8"):
+    if isinstance(data, str):
+        data = data.encode(encoding)
+    
+    if isinstance(data, bytes):
+        data = bytearray(data)
+    
+    remainder = len(data) % 16
+    if remainder != 0:
+        data.extend(bytearray(16 - remainder))
+    
+    return data
+
+def image_AES_optimized(original_image, key_text, en_or_decryption, encoding='utf-8'):
+    
+    # Pre-process key once
+    key_bytes = expand_to_128b_fast(key_text, encoding)
+    if len(key_bytes) > 16:
+        print("Key too long!")
+        return None, None
+    
+    key_bytes_object = bytes(key_bytes)
+    
+    image_bytes = original_image.tobytes()
+    pic_width, pic_height = original_image.size
+    image_bytes_padded = expand_to_128b_fast(image_bytes)
+    total_bytes = len(image_bytes_padded)
+    
+    print(f"Image size: {total_bytes/1024/1024:.2f} MB")
+    
+    result_bytes = bytearray(total_bytes)
+    start_time = time.time()
+    
+    chunks_processed = 0
+    for chunk_start in range(0, total_bytes, MAX_BUFFER_SIZE):
+        chunk_end = min(chunk_start + MAX_BUFFER_SIZE, total_bytes)
+        chunk_size = chunk_end - chunk_start
+    
+        chunk_result = call_AES_optimized(
+            image_bytes_padded[chunk_start:chunk_end],
+            chunk_size,
+            key_bytes_object,
+            en_or_decryption
+        )
+        
+        result_bytes[chunk_start:chunk_start + len(chunk_result)] = chunk_result
+        chunks_processed += 1
+        
+        if chunks_processed % 10 == 0:
+            elapsed = time.time() - start_time
+            throughput = (chunk_start / elapsed / 1024 / 1024) if elapsed > 0 else 0
+            print(f"  → {chunk_start/1024/1024:.1f} MB @ {throughput:.1f} MB/s")
+    
+    total_time = time.time() - start_time
+    throughput = total_bytes / total_time / 1024 / 1024
+    
+    print(f"{'Encryption' if en_or_decryption==0 else 'Decryption'} time: {total_time:.3f}s")
+    print(f"Throughput: {throughput:.2f} MB/s")
+    
+    result_image = Image.frombytes('RGB', (pic_width, pic_height), bytes(result_bytes))
+    
+    return result_image, result_bytes
+
+def benchmark_aes():
+    """Run optimized benchmark"""
+    key_text = "Hello World"
+    image_path = "./images/parrot.jpg"
+    
+    original_image = Image.open(image_path)
+    pic_width, pic_height = original_image.size
+    
+    print(f"\n{'='*60}")
+    print(f"Testing: {pic_width}x{pic_height} image")
+    print(f"{'='*60}\n")
+    
+    # Warm up the system
+    print("Warming up...")
+    small_test = original_image.resize((100, 100))
+    image_AES_optimized(small_test, key_text, 0)
+    
+    # Main encryption
+    print("\n[1/2] Encrypting...")
+    start_enc = time.time()
+    encryption_image, _ = image_AES_optimized(original_image, key_text, 0)
+    enc_time = time.time() - start_enc
+    
+    # Main decryption  
+    print("\n[2/2] Decrypting...")
+    start_dec = time.time()
+    decryption_image, _ = image_AES_optimized(encryption_image, key_text, 1)
+    dec_time = time.time() - start_dec
+    
+    print(f"\nComplete!")
+    print(f"Encryption: {enc_time:.3f}s")
+    print(f"Decryption: {dec_time:.3f}s")
+    print(f"Total time: {enc_time + dec_time:.3f}s")
+    
+    return original_image, encryption_image, decryption_image
+
+def display_simple(original_image, encrypted_image, decrypted_image):
+    from IPython.display import display
+    
+    print("Original Image:")
+    display(original_image)
+    
+    print("Encrypted Image:")
+    display(encrypted_image)
+    
+    print("Decrypted Image:")
+    display(decrypted_image)
+
+# Add this at the end of your main function:
+if __name__ == "__main__":
+    # Run benchmark
+    orig, enc, dec = benchmark_aes()
+    display_simple(orig, enc, dec)
